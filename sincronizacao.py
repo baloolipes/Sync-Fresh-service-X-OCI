@@ -6,9 +6,9 @@ from datetime import datetime
 from pathlib import Path
 
 # --------------------------- CONFIG ---------------------------
-config = oci.config.from_file("~/.oci/config", "DEFAULT")
-FRESHSERVICE_DOMAIN = "https://[INSIRA SEU DOMINIO].freshservice.com"
-API_KEY = "API_KEY"
+config = oci.config.from_file() # Normalmente o padrão fica em "~/.oci/config", "DEFAULT"
+FRESHSERVICE_DOMAIN = "https://[INSIRA SEU DOMINIO].freshservice.com" # Coloque o dominio da sua empresa. 
+API_KEY = "API_KEY" # Insira a API KEY do Fresh Service. 
 ASSET_TYPE_IDS = {
     "instance": 6000871762,
     "dbsystem": 6000871763,
