@@ -1,1 +1,4 @@
-
+#Deve seguir o seguinte padrão
+department_id,nome_compartimento,ocid_compartment,criticidade,responsavel
+434325264,producao,ocid1.compartment.oc1..aaaa...,medium,45653552343
+434325264,homol_Produção,ocid1.compartment.oc1..bbbb...,high,434325264
