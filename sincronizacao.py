@@ -10,14 +10,14 @@ config = oci.config.from_file() # Normalmente o padrão fica em "~/.oci/config",
 FRESHSERVICE_DOMAIN = "https://[INSIRA SEU DOMINIO].freshservice.com" # Coloque o dominio da sua empresa. 
 API_KEY = "API_KEY" # Insira a API KEY do Fresh Service. 
 ASSET_TYPE_IDS = {
-    "instance": 6000871762,
-    "dbsystem": 6000871763,
-    "bucket": 6000907431,
-    "vcn": 6000916211,
-    "subnet": 6000916212,
-    "load_balancer": 6000916213,
+    "instance": XXXXXXXXX, # Extraia via API do Fresh qual os codigos de cada tipo de recurso. 
+    "dbsystem": XXXXXXXX,
+    "bucket": XXXXXXXXX,
+    "vcn": XXXXXXXXXX,
+    "subnet": XXXXXXXX,
+    "load_balancer": XXXXXXXXX,
 }
-LOCATION_MAP = {"sa-saopaulo-1": 6000199993}
+LOCATION_MAP = {"sa-saopaulo-1": XXXXXXX} #Extraia via API do Fresh qual o codigo da region cadastrada.
 LOG_PATH = f"execucao_freshservice_{datetime.now().strftime('%Y%m%d_%H%M%S')}.log"
 
 # --------------------------- FUNÇÕES AUXILIARES ---------------------------
